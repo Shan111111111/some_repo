@@ -8,6 +8,7 @@ info:
     email: shsan@gmail.com
   version: 1.0.0
   
+  -------
   
 servers: 
   - url: http://server1.com
