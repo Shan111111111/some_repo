@@ -1,0 +1,6 @@
+com\shantesh\studentService\service\StudentServiceImpl.class
+com\shantesh\studentService\controller\StudentController.class
+com\shantesh\studentService\domain\Student.class
+com\shantesh\studentService\domain\StudentRepository.class
+com\shantesh\studentService\service\StudentService.class
+com\shantesh\studentService\StudentServiceApplication.class

@@ -1,0 +1,102 @@
+openapi: 3.0.0
+info:
+  title: Student API
+  description: Student api demo
+  contact: 
+    name: Shantesh 
+    url: http://localhost:8080
+    email: shsan@gmail.com
+  version: 1.0.0
+  
+  
+servers: 
+  - url: http://server1.com
+  - url: http://server2prod.com
+paths:
+    /students:
+      description: Student Resource
+      get:
+        description: Operation to fetch students
+        parameters: 
+          - in: query
+            name: studentname
+            required: true
+            schema:
+              type: string
+              example: Ajmal Bahi
+        responses:
+          200:
+            description: Success Response
+            content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    properties:
+                      StudentID:
+                        type: integer
+                        example: 3
+                      StudentName:
+                        type: string
+                        example: Shantesh
+                      StudentRemarks:
+                        type: string
+                        example: Inventor
+    /student:
+      post:
+        description: Insert new student
+        requestBody:
+          content:
+            application/json: 
+              schema:
+                type: object
+        responses:
+          201:
+              description: inserted new student success
+    /student/{id}: 
+      get:
+        description: Operation to fetch students
+        parameters: 
+          - in: path
+            name: id
+            required: true
+            schema:
+                type: integer
+        responses:
+          200:
+            description: success response
+            content:
+              appliction/json:
+              
+          
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+      
+    
