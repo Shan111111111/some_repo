@@ -50,7 +50,7 @@ public class StudentController {
 	@PutMapping(value = "/student/{id}")
 	public Student updateStudent(@RequestBody Student student,@PathVariable Long id) {
 		Student st = studentService.getStudent(id);
-//		BeanUtils.copyProperties(student, st);master
+//		BeanUtils.copyProperties(student, st);
 		st.setAddressLine1("Something New changed changed");
 		return studentService.saveStudent(st);
 	}
