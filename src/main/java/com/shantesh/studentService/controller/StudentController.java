@@ -32,6 +32,7 @@ public class StudentController {
 	@GetMapping(value = "/student/{id}")
 	public Student getStudent(@PathVariable Long id) {
 		return studentService.getStudent(id);
+//		suso
 	}
 
 	@PostMapping(value = "/student")
