@@ -9,7 +9,7 @@
 		<version>2.5.7</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.shantesh</groupId>
+	<groupId>com.shantesh</groupId> 
 	<artifactId>studentService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>studentService</name>
